@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax Image Scroll</title>
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">
+</head>
+<body>
+    
+ <section class="contentX">
+    <article class="parallax-img-container">
+      <h1><font color="black"> Prakash Ravichandran </font></h1>
+     
+      <a class="btn" href="#">Just Scroll</a>
+      <img src="img/smoke-01.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="700" data-ps-horizontal-position="420" />
+      <img src="img/smoke-02.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.5" data-ps-vertical-position="700" data-ps-horizontal-position="220" />
+      <img src="img/smoke-03.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="700" data-ps-horizontal-position="300" />
+      <img src="img/smoke-04.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.5" data-ps-vertical-position="500" data-ps-horizontal-position="620" />
+      <img src="img/smoke-05.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="1" data-ps-vertical-position="600" data-ps-horizontal-position="0" />
+      <img src="img/smoke-06.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.4" data-ps-vertical-position="200" data-ps-horizontal-position="520" />
+      <img src="img/smoke-07.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.3" data-ps-vertical-position="300" data-ps-horizontal-position="320" />
+      <img src="img/smoke-06.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.2" data-ps-vertical-position="-900" data-ps-horizontal-position="220" />
+      <img src="img/smoke-05.png" class="parallax-move" data-ps-z-index="1" data-ps-speed="0.3" data-ps-vertical-position="-600" data-ps-horizontal-position="150" />
+      <img src="img/stick.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="1" data-ps-vertical-position="1000" data-ps-horizontal-position="920" />
+      <img src="img/003.png" class="parallax-move" data-ps-z-index="2" data-ps-speed="0.4" data-ps-vertical-position="-200" data-ps-horizontal-position="0" />
+      <img src="img/002.png" class="parallax-move" data-ps-z-index="3" data-ps-speed="0.5" data-ps-vertical-position="-400" data-ps-horizontal-position="0" />
+      <img src="img/birds.png" class="parallax-move" data-ps-z-index="4" data-ps-speed="1" data-ps-vertical-position="-300" data-ps-horizontal-position="600" />
+      <img src="img/black-cloud.png" class="parallax-move" data-ps-z-index="5" data-ps-speed="0.35" data-ps-vertical-position="-400" data-ps-horizontal-position="0">
+    </article>
+  </section>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script src="js/parallaxImg.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).on("ready", function() 
+    {
+      var parallaxSettings =
+      {
+        initialOpacity: 1, 
+        opacitySpeed: 0.1,
+        pageLoader: true
+      };
+
+      parallaxImgScroll(parallaxSettings);
+    });
+  </script>    
+</body>
+</html>
